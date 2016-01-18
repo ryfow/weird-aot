@@ -1,5 +1,5 @@
 (ns weird-aot.core
-  (:require [ring.adapter.jetty :as jetty]
+  (:require [weird-aot.jetty]
             [clojure.core.async])
   (:gen-class))
 
