@@ -4,12 +4,13 @@
 
   :exclusions [org.clojure/clojurescript]
   :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.eclipse.jetty/jetty-server "9.2.10.v20150310"]
-                 [org.clojure/core.async "0.2.374"]
+                 [org.slf4j/slf4j-api "1.7.13"]
                  [com.fzakaria/slf4j-timbre "0.2.2"]
-                 [com.taoensso/timbre "4.2.0"]]
-
+                 [org.clojure/tools.reader "1.0.0-alpha2"]
+                 [com.taoensso/timbre "4.2.0"]
+                 [org.clojure/core.async "0.2.374"]
+                 [org.clojure/tools.analyzer.jvm "0.6.9"]]
+  :java-source-paths ["java/"]
   :aot :all
   :main weird-aot.core)
-  
 

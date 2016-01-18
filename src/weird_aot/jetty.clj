@@ -1,7 +1,6 @@
 (ns weird-aot.jetty
-  (:import [org.eclipse.jetty.server.handler AbstractHandler]))
+  (:import (weird_aot AClass)))
 
-(defn- proxy-handler [handler]
-  (proxy [AbstractHandler] []
-    (handle [_ base-request request response])))
+(defn- ac []
+  (proxy [AClass] []))
 
